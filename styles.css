@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    padding-top: 50px;
+}
+.container h1{
+    color: lightcoral;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.container h1 span{
+    color: cornflowerblue;
+}
+.container .todo_sec{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.container .todo_sec input{
+    font-size: 1.1rem;
+    outline: none;
+    border: 2px solid springgreen;
+    padding: 10px;
+    border-radius: 5px;
+}
+.container .todo_sec button{
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    background-color: springgreen;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+    color: darkgreen;
+}
+.container .todo_sec button:hover{
+    background-color: darkcyan;
+    color: whitesmoke;
+    transform: scale(1.1);
+}
+.container ul{
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    margin-top: 20px;
+}
+.container ul li{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+    border: 2px solid ;
+    padding: 10px 30px;
+}
+.container ul li div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container ul li button{
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+.container ul li button:hover{
+    transform: scale(1.1);
+}
+.container ul li .btn_dlt{
+    background-color: crimson;
+    color: whitesmoke;
+}
+.container ul li .btn_edit{
+    background-color: darkblue;
+    color: whitesmoke;
+}
+.check_box{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+@media only screen and (max-width : 768px) {
+    .container ul li{
+        flex-direction: column;
+    }
+    .container .todo_sec{
+        flex-direction: column;
+    }
+    .check_box {
+        width: 30px;
+        height: 30px;
+    }
+}
